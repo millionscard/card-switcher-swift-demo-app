@@ -1,0 +1,6 @@
+framework module Pods_AccountUpdaterDemo {
+  umbrella header "Pods-AccountUpdaterDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

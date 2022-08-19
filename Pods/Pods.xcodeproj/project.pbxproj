@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043BC0762B663B7F032DBF5692995553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		0A80AC686528C9A585ED8F2E32ADD0D4 /* PasswordChangerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2314812D518C0729AC00A50BA864E /* PasswordChangerViewController.swift */; };
+		2A72EAA8A1B5C722EF080B6EFA7F830A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		4FD312CDB854C53FA3EF866DFA4665FA /* Pods-AccountUpdaterDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FE5327E7D4ED71DEF3569B4E170A7F4 /* Pods-AccountUpdaterDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6812F266BB5B34E9655D157C29BEBF44 /* PasswordChangerSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B656A953162159F9FF3AC03376C3A288 /* PasswordChangerSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B57F01F09A911CE5EE6645B4DB51A84 /* Pods-AccountUpdaterDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C45A4F470929FDCEEF4F350D98C4FA98 /* Pods-AccountUpdaterDemo-dummy.m */; };
+		7DFC0F277411E82025284E3FC407B265 /* PasswordChangerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA13C5E65FD01891114B1469B973652F /* PasswordChangerSession.swift */; };
+		96B3BCD1547B92241662F1416DEE9BD7 /* PasswordChangerSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BE71EC1ED55A76CBF687457A6F1B06 /* PasswordChangerSDK-dummy.m */; };
+		F0D3264321C268C8F479F6EA4A00D458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECD09BD6B2FAFBF81A5154037E41CF0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DE2216A9A3172C6CC35E5B7BDC18CC7;
+			remoteInfo = PasswordChangerSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		097D608A765E133E279D173BA3BA83AF /* Pods-AccountUpdaterDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AccountUpdaterDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A063D7D8F98386AD52C2FEBBF1E9667 /* Pods-AccountUpdaterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AccountUpdaterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		138EC3DEB7E92E69B8A4E52077CB304E /* Pods-AccountUpdaterDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AccountUpdaterDemo-Info.plist"; sourceTree = "<group>"; };
+		151675A2DCD71613CC0CBE3CFD0C7DB1 /* PasswordChangerSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordChangerSDK-prefix.pch"; sourceTree = "<group>"; };
+		3FE5327E7D4ED71DEF3569B4E170A7F4 /* Pods-AccountUpdaterDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AccountUpdaterDemo-umbrella.h"; sourceTree = "<group>"; };
+		4E15AB1A93BFCD11DA282E25891D74A9 /* Pods-AccountUpdaterDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-AccountUpdaterDemo"; path = Pods_AccountUpdaterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52099D87751FDB1BFF6756178D1EAF15 /* PasswordChangerSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PasswordChangerSDK-Info.plist"; sourceTree = "<group>"; };
+		6B7DDCFD35E88E3867A7F60E55E52EB9 /* PasswordChangerSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PasswordChangerSDK.modulemap; sourceTree = "<group>"; };
+		6CF2314812D518C0729AC00A50BA864E /* PasswordChangerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordChangerViewController.swift; path = Classes/PasswordChangerViewController.swift; sourceTree = "<group>"; };
+		73F987B37717FE15B89571B7B1453858 /* PasswordChangerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordChangerSDK.release.xcconfig; sourceTree = "<group>"; };
+		93DE15001C29A61CA6962082A2DB8637 /* Pods-AccountUpdaterDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AccountUpdaterDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A18C70F45A85CF8FE1CC42498AC5A627 /* PasswordChangerSDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PasswordChangerSDK; path = PasswordChangerSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA13C5E65FD01891114B1469B973652F /* PasswordChangerSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordChangerSession.swift; path = Classes/PasswordChangerSession.swift; sourceTree = "<group>"; };
+		B656A953162159F9FF3AC03376C3A288 /* PasswordChangerSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PasswordChangerSDK-umbrella.h"; sourceTree = "<group>"; };
+		C45A4F470929FDCEEF4F350D98C4FA98 /* Pods-AccountUpdaterDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AccountUpdaterDemo-dummy.m"; sourceTree = "<group>"; };
+		CCF21D0787BD58FB26DF4C2183F8C7CD /* Pods-AccountUpdaterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AccountUpdaterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E498C3BD36EF1C97F1499AB51B601BA6 /* Pods-AccountUpdaterDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AccountUpdaterDemo-frameworks.sh"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ED71DA7198748633B0930C67D1C501B9 /* PasswordChangerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PasswordChangerSDK.debug.xcconfig; sourceTree = "<group>"; };
+		F0BE71EC1ED55A76CBF687457A6F1B06 /* PasswordChangerSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PasswordChangerSDK-dummy.m"; sourceTree = "<group>"; };
+		FEF4C6163F8A60744F534DB698DCF6B6 /* Pods-AccountUpdaterDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AccountUpdaterDemo.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01597D241C2048F20CBF717725A7722B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043BC0762B663B7F032DBF5692995553 /* Foundation.framework in Frameworks */,
+				F0D3264321C268C8F479F6EA4A00D458 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799BC56D9E2E0BF931EF83C55F25A0B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A72EAA8A1B5C722EF080B6EFA7F830A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A4491370CDC2D1520A3F80589EC688 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B7DDCFD35E88E3867A7F60E55E52EB9 /* PasswordChangerSDK.modulemap */,
+				F0BE71EC1ED55A76CBF687457A6F1B06 /* PasswordChangerSDK-dummy.m */,
+				52099D87751FDB1BFF6756178D1EAF15 /* PasswordChangerSDK-Info.plist */,
+				151675A2DCD71613CC0CBE3CFD0C7DB1 /* PasswordChangerSDK-prefix.pch */,
+				B656A953162159F9FF3AC03376C3A288 /* PasswordChangerSDK-umbrella.h */,
+				ED71DA7198748633B0930C67D1C501B9 /* PasswordChangerSDK.debug.xcconfig */,
+				73F987B37717FE15B89571B7B1453858 /* PasswordChangerSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PasswordChangerSDK";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C0FFFA15D6BDC07AFA69444C1C37266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A18C70F45A85CF8FE1CC42498AC5A627 /* PasswordChangerSDK */,
+				4E15AB1A93BFCD11DA282E25891D74A9 /* Pods-AccountUpdaterDemo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7F13724677F11B664CD88D72F536D341 /* PasswordChangerSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AA13C5E65FD01891114B1469B973652F /* PasswordChangerSession.swift */,
+				6CF2314812D518C0729AC00A50BA864E /* PasswordChangerViewController.swift */,
+				04A4491370CDC2D1520A3F80589EC688 /* Support Files */,
+			);
+			name = PasswordChangerSDK;
+			path = PasswordChangerSDK;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				F9FFFA7AFAEB7D6C05BD4E4D60830450 /* Pods */,
+				2C0FFFA15D6BDC07AFA69444C1C37266 /* Products */,
+				DF04BFB08E4812CA602C3AC7D1FEBEC7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DF04BFB08E4812CA602C3AC7D1FEBEC7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED2731DC88F4DF87034DCE1EA848C338 /* Pods-AccountUpdaterDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ED2731DC88F4DF87034DCE1EA848C338 /* Pods-AccountUpdaterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4C6163F8A60744F534DB698DCF6B6 /* Pods-AccountUpdaterDemo.modulemap */,
+				93DE15001C29A61CA6962082A2DB8637 /* Pods-AccountUpdaterDemo-acknowledgements.markdown */,
+				097D608A765E133E279D173BA3BA83AF /* Pods-AccountUpdaterDemo-acknowledgements.plist */,
+				C45A4F470929FDCEEF4F350D98C4FA98 /* Pods-AccountUpdaterDemo-dummy.m */,
+				E498C3BD36EF1C97F1499AB51B601BA6 /* Pods-AccountUpdaterDemo-frameworks.sh */,
+				138EC3DEB7E92E69B8A4E52077CB304E /* Pods-AccountUpdaterDemo-Info.plist */,
+				3FE5327E7D4ED71DEF3569B4E170A7F4 /* Pods-AccountUpdaterDemo-umbrella.h */,
+				0A063D7D8F98386AD52C2FEBBF1E9667 /* Pods-AccountUpdaterDemo.debug.xcconfig */,
+				CCF21D0787BD58FB26DF4C2183F8C7CD /* Pods-AccountUpdaterDemo.release.xcconfig */,
+			);
+			name = "Pods-AccountUpdaterDemo";
+			path = "Target Support Files/Pods-AccountUpdaterDemo";
+			sourceTree = "<group>";
+		};
+		F9FFFA7AFAEB7D6C05BD4E4D60830450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F13724677F11B664CD88D72F536D341 /* PasswordChangerSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		93D819B337E2853112D361B8F271213F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD312CDB854C53FA3EF866DFA4665FA /* Pods-AccountUpdaterDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F409E34C3E7C54E725275E681EAE25F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6812F266BB5B34E9655D157C29BEBF44 /* PasswordChangerSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7A6BDA667F91D1A202B259F43C5D9FC0 /* Pods-AccountUpdaterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33033AA76083635712C55B076979A986 /* Build configuration list for PBXNativeTarget "Pods-AccountUpdaterDemo" */;
+			buildPhases = (
+				93D819B337E2853112D361B8F271213F /* Headers */,
+				FDD1CFC64FE8477A5D8C34E3B01FC7DC /* Sources */,
+				799BC56D9E2E0BF931EF83C55F25A0B3 /* Frameworks */,
+				B45C54981EF65C65C9CDA37305C7037C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73A06469CF72464E9C5BC94ABD4E90D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-AccountUpdaterDemo";
+			productName = Pods_AccountUpdaterDemo;
+			productReference = 4E15AB1A93BFCD11DA282E25891D74A9 /* Pods-AccountUpdaterDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+		7DE2216A9A3172C6CC35E5B7BDC18CC7 /* PasswordChangerSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA46416654313F2C43FC34CCF1661D5 /* Build configuration list for PBXNativeTarget "PasswordChangerSDK" */;
+			buildPhases = (
+				F409E34C3E7C54E725275E681EAE25F5 /* Headers */,
+				5BBE981A5DF0DCA346FDC3664A61C390 /* Sources */,
+				01597D241C2048F20CBF717725A7722B /* Frameworks */,
+				96CFE542E415D5BA1E5588E2FAC02D03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordChangerSDK;
+			productName = PasswordChangerSDK;
+			productReference = A18C70F45A85CF8FE1CC42498AC5A627 /* PasswordChangerSDK */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2C0FFFA15D6BDC07AFA69444C1C37266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DE2216A9A3172C6CC35E5B7BDC18CC7 /* PasswordChangerSDK */,
+				7A6BDA667F91D1A202B259F43C5D9FC0 /* Pods-AccountUpdaterDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96CFE542E415D5BA1E5588E2FAC02D03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C54981EF65C65C9CDA37305C7037C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BBE981A5DF0DCA346FDC3664A61C390 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B3BCD1547B92241662F1416DEE9BD7 /* PasswordChangerSDK-dummy.m in Sources */,
+				7DFC0F277411E82025284E3FC407B265 /* PasswordChangerSession.swift in Sources */,
+				0A80AC686528C9A585ED8F2E32ADD0D4 /* PasswordChangerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD1CFC64FE8477A5D8C34E3B01FC7DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B57F01F09A911CE5EE6645B4DB51A84 /* Pods-AccountUpdaterDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73A06469CF72464E9C5BC94ABD4E90D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PasswordChangerSDK;
+			target = 7DE2216A9A3172C6CC35E5B7BDC18CC7 /* PasswordChangerSDK */;
+			targetProxy = ECD09BD6B2FAFBF81A5154037E41CF0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0ECC510DCF5721209C4CA74AB23878B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F987B37717FE15B89571B7B1453858 /* PasswordChangerSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PasswordChangerSDK/PasswordChangerSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasswordChangerSDK/PasswordChangerSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PasswordChangerSDK/PasswordChangerSDK.modulemap";
+				PRODUCT_MODULE_NAME = PasswordChangerSDK;
+				PRODUCT_NAME = PasswordChangerSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2FE33647C9E69A2DCB4F80ECDBAF22DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED71DA7198748633B0930C67D1C501B9 /* PasswordChangerSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PasswordChangerSDK/PasswordChangerSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PasswordChangerSDK/PasswordChangerSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PasswordChangerSDK/PasswordChangerSDK.modulemap";
+				PRODUCT_MODULE_NAME = PasswordChangerSDK;
+				PRODUCT_NAME = PasswordChangerSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DEE17D485B3B349B9B02BA42CFA81F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A063D7D8F98386AD52C2FEBBF1E9667 /* Pods-AccountUpdaterDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AccountUpdaterDemo/Pods-AccountUpdaterDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AccountUpdaterDemo/Pods-AccountUpdaterDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6E04D49F2D6649EC0AEFF2E5E3F6758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCF21D0787BD58FB26DF4C2183F8C7CD /* Pods-AccountUpdaterDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AccountUpdaterDemo/Pods-AccountUpdaterDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AccountUpdaterDemo/Pods-AccountUpdaterDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33033AA76083635712C55B076979A986 /* Build configuration list for PBXNativeTarget "Pods-AccountUpdaterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEE17D485B3B349B9B02BA42CFA81F6 /* Debug */,
+				B6E04D49F2D6649EC0AEFF2E5E3F6758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA46416654313F2C43FC34CCF1661D5 /* Build configuration list for PBXNativeTarget "PasswordChangerSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FE33647C9E69A2DCB4F80ECDBAF22DB /* Debug */,
+				0ECC510DCF5721209C4CA74AB23878B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

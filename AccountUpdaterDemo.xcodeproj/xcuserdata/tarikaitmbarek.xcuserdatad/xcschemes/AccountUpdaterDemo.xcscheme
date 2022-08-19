@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "99626C4B28A99F6D00E8B967"
+               BuildableName = "AccountUpdaterDemo.app"
+               BlueprintName = "AccountUpdaterDemo"
+               ReferencedContainer = "container:AccountUpdaterDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "99626C4B28A99F6D00E8B967"
+            BuildableName = "AccountUpdaterDemo.app"
+            BlueprintName = "AccountUpdaterDemo"
+            ReferencedContainer = "container:AccountUpdaterDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
