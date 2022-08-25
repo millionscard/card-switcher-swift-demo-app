@@ -5,7 +5,7 @@ source 'https://github.com/millionscard/pods-repo'
 target 'AccountUpdaterDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'PasswordChangerSDK', '0.1.4'
+  pod 'CardOnFileSwitcher', '0.1.9'
 
   # Pods for AccountUpdaterDemo
 

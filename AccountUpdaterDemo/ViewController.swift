@@ -6,11 +6,10 @@
 //
 
 import UIKit
-import PasswordChangerSDK
-
+import CardOnFileSwitcher
 
 class ViewController: UIViewController {
-    var session: PasswordChangerSession!
+    var session: CardOnFileSwitcherSession!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +18,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func openAccountUpdater() {
-        let session = PasswordChangerSession()
+        let session = CardOnFileSwitcherSession()
         session.createSession(completionHandler: { (sessionId) in
             DispatchQueue.main.async {
                 self.openUpdater(session_id: sessionId)
@@ -28,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     func openUpdater(session_id: String = "") {
-            let vc = PasswordChangerViewController(sessionId: session_id)
+            let vc = CardOnFileSwitcherViewController(sessionId: session_id)
             present(vc, animated: true, completion: nil)
         }
 }
