@@ -6,6 +6,6 @@ target 'KnotDemo' do
   use_frameworks!
   pod 'KnotAPI', '~> 0.1.15'
 
-  # Pods for AccountUpdaterDemo
+  # Pods for KnotDemo
 
 end
