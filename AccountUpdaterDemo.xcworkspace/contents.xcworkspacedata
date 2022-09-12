@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AccountUpdaterDemo.xcodeproj">
+      location = "group:/Users/tarikaitmbarek/WebstormProjects/@millions/AccountUpdaterDemo/KnotDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
