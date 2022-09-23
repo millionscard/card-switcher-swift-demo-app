@@ -4,7 +4,7 @@ platform :ios, '10.0'
 target 'KnotDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'KnotAPI', '~> 0.1.15'
+  pod 'KnotAPI', '~> 0.1.19'
 
   # Pods for KnotDemo
 
