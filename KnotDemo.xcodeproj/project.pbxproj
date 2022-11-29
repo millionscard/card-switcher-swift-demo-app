@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C15CF597BFA8B9207940F0C /* Pods_KnotDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF129995F4AE6CAE6E74132 /* Pods_KnotDemo.framework */; };
 		99626C5028A99F6D00E8B967 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99626C4F28A99F6D00E8B967 /* AppDelegate.swift */; };
 		99626C5228A99F6D00E8B967 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99626C5128A99F6D00E8B967 /* SceneDelegate.swift */; };
 		99626C5428A99F6D00E8B967 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99626C5328A99F6D00E8B967 /* ViewController.swift */; };
 		99626C5728A99F6D00E8B967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99626C5528A99F6D00E8B967 /* Main.storyboard */; };
 		99626C5928A99F7200E8B967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99626C5828A99F7200E8B967 /* Assets.xcassets */; };
 		99626C5C28A99F7200E8B967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99626C5A28A99F7200E8B967 /* LaunchScreen.storyboard */; };
-		D58B0F08C515B6DCB972B4B1 /* Pods_KnotDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97196ED276282041A33FFFE /* Pods_KnotDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		552F492349B3DA5A199D80F4 /* Pods-KnotDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotDemo.release.xcconfig"; path = "Target Support Files/Pods-KnotDemo/Pods-KnotDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1CF129995F4AE6CAE6E74132 /* Pods_KnotDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnotDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F68CDC285CBD97D563191EB /* Pods-KnotDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotDemo.release.xcconfig"; path = "Target Support Files/Pods-KnotDemo/Pods-KnotDemo.release.xcconfig"; sourceTree = "<group>"; };
 		99626C4C28A99F6D00E8B967 /* KnotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99626C4F28A99F6D00E8B967 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99626C5128A99F6D00E8B967 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +27,7 @@
 		99626C5828A99F7200E8B967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99626C5B28A99F7200E8B967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99626C5D28A99F7200E8B967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A585A710A8F811E514C8A1F /* Pods-KnotDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotDemo.debug.xcconfig"; path = "Target Support Files/Pods-KnotDemo/Pods-KnotDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		C97196ED276282041A33FFFE /* Pods_KnotDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnotDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B0D70CBC21CA6BA7790459 /* Pods-KnotDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotDemo.debug.xcconfig"; path = "Target Support Files/Pods-KnotDemo/Pods-KnotDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +35,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58B0F08C515B6DCB972B4B1 /* Pods_KnotDemo.framework in Frameworks */,
+				3C15CF597BFA8B9207940F0C /* Pods_KnotDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1E66E77E4DE4EF9E414B5C5A /* Frameworks */ = {
+		318348DD94A7474DB12F2994 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C97196ED276282041A33FFFE /* Pods_KnotDemo.framework */,
+				1CF129995F4AE6CAE6E74132 /* Pods_KnotDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -53,8 +53,8 @@
 		5FA5AD59AEE0C5D7BEDA5E59 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A585A710A8F811E514C8A1F /* Pods-KnotDemo.debug.xcconfig */,
-				552F492349B3DA5A199D80F4 /* Pods-KnotDemo.release.xcconfig */,
+				A2B0D70CBC21CA6BA7790459 /* Pods-KnotDemo.debug.xcconfig */,
+				7F68CDC285CBD97D563191EB /* Pods-KnotDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 				99626C4E28A99F6D00E8B967 /* KnotDemo */,
 				99626C4D28A99F6D00E8B967 /* Products */,
 				5FA5AD59AEE0C5D7BEDA5E59 /* Pods */,
-				1E66E77E4DE4EF9E414B5C5A /* Frameworks */,
+				318348DD94A7474DB12F2994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99626C6028A99F7200E8B967 /* Build configuration list for PBXNativeTarget "KnotDemo" */;
 			buildPhases = (
-				6D3EBD535B3615CCBD7589D8 /* [CP] Check Pods Manifest.lock */,
+				473196B1FFE0D8410CE963A4 /* [CP] Check Pods Manifest.lock */,
 				99626C4828A99F6D00E8B967 /* Sources */,
 				99626C4928A99F6D00E8B967 /* Frameworks */,
 				99626C4A28A99F6D00E8B967 /* Resources */,
-				875D6AA0D998E44D05A8CBDF /* [CP] Embed Pods Frameworks */,
+				1BA9FA9C3113A021D62D706C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,7 +160,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6D3EBD535B3615CCBD7589D8 /* [CP] Check Pods Manifest.lock */ = {
+		1BA9FA9C3113A021D62D706C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		473196B1FFE0D8410CE963A4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,23 +197,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		875D6AA0D998E44D05A8CBDF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -350,7 +350,7 @@
 		};
 		99626C6128A99F7200E8B967 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A585A710A8F811E514C8A1F /* Pods-KnotDemo.debug.xcconfig */;
+			baseConfigurationReference = A2B0D70CBC21CA6BA7790459 /* Pods-KnotDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -365,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +381,7 @@
 		};
 		99626C6228A99F7200E8B967 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 552F492349B3DA5A199D80F4 /* Pods-KnotDemo.release.xcconfig */;
+			baseConfigurationReference = 7F68CDC285CBD97D563191EB /* Pods-KnotDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -396,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

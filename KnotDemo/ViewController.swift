@@ -73,9 +73,6 @@ extension ViewController {
         var request = URLRequest(url: serviceUrl)
         request.httpMethod = "POST"
         request.httpBody = httpBody
-        request.setValue("sandbox", forHTTPHeaderField: "Environment")
-        request.setValue("ab86955e-22f4-49c3-97d7-369973f4cb9e", forHTTPHeaderField: "Client-Id")
-        request.setValue("d1a5cde831464cd3840ccf762f63ceb7", forHTTPHeaderField: "Client-Secret")
         if token == "" {
             request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         }
@@ -99,20 +96,57 @@ extension ViewController {
                     else {
                         let sessionID = (json as? NSDictionary ?? NSDictionary())["session"] as? String ?? ""
                         if self.isOpenFrom == .switcher {
-                            let session = CardOnFileSwitcherSession(sessionId: sessionID, clientId: "ab86955e-22f4-49c3-97d7-369973f4cb9e", environment: .sandbox)
+                            let session = CardOnFileSwitcherSession(sessionId: sessionID, clientId: "3f4acb6b-a8c9-47bc-820c-b0eaf24ee771", environment: .sandbox)
                             session.setPrimaryColor(primaryColor: "#000000")
                             session.setTextColor(textColor: "#FFFFFF")
                             session.setCompanyName(companyName: "Rho")
-                            session.openOnCardFileSwitcher(merchants: [])
-                            session.setDelegate(delegate: self)
+                            let cardSwitcherConfig = CardSwitcherConfiguration()
+                            cardSwitcherConfig.setOnSuccess(onSuccess: {merchant in
+                                print("cardSwitcher Merchant: \(merchant)")
+                            })
+                            cardSwitcherConfig.setOnExit {
+                                print("cardSwitcher onExit")
+                            }
+                            cardSwitcherConfig.setOnError { error, message in
+                                print("cardSwitcher Error: \(error), Message: \(message)")
+                            }
+                            cardSwitcherConfig.setOnEvent(onEvent: { event, merchant in
+                                print("cardSwitcher Event: \(event), Merchant: \(merchant)")
+                            })
+                            cardSwitcherConfig.setOnFinished {
+                                print("cardSwitcher Finished")
+                            }
+                            session.setConfiguration(config: cardSwitcherConfig)
+                            DispatchQueue.main.async {
+                                session.openCardOnFileSwitcher()
+                            }
                         }
                         else {
-                            let session = CardOnFileSwitcherSession(sessionId: sessionID, clientId: "ab86955e-22f4-49c3-97d7-369973f4cb9e", environment: .sandbox)
+                            let session = SubscriptionCancelerSession(sessionId: sessionID, clientId: "3f4acb6b-a8c9-47bc-820c-b0eaf24ee771", environment: .sandbox)
                             session.setPrimaryColor(primaryColor: "#000000")
                             session.setTextColor(textColor: "#FFFFFF")
                             session.setCompanyName(companyName: "Millions")
-                            session.openOnSubscriptionCanceler(merchants: [])
-                            session.setDelegate(delegate: self)
+                            session.setAmount(amount: true)
+                            let config = SubscriptionCancelerConfiguration()
+                            config.setOnSuccess { merchant in
+                                print("SubscriptionCanceler onSuccess Merchant: \(merchant)")
+                            }
+                            config.setOnExit {
+                                print("SubscriptionCanceler onExit")
+                            }
+                            config.setOnError { error, message in
+                                print("SubscriptionCanceler Error: \(error), Message: \(message)")
+                            }
+                            config.setOnEvent(onEvent: { event, merchant in
+                                print("SubscriptionCanceler Event: \(event), Merchant: \(merchant)")
+                            })
+                            config.setOnFinished {
+                                print("SubscriptionCanceler Finished")
+                            }
+                            session.setConfiguration(configuration: config)
+                            DispatchQueue.main.async {
+                                session.openSubscriptionCanceler()
+                            }
                         }
                     }
                 } catch {
@@ -120,27 +154,5 @@ extension ViewController {
                 }
             }
         }.resume()
-    }
-}
-
-//MARK: - DELEGATE METHODS
-extension ViewController : CardOnFileDelegate {
-    func onSuccess(merchant: String) {
-        print(merchant)
-    }
-
-    func onError(error: String, message: String) {
-        print(error)
-        print(message)
-    }
-    func onEvent(event: String, message: String) {
-        print(event)
-        print(message)
-    }
-    func onExit() {
-        print("onExit event")
-    }
-    func onFinished() {
-        print("onFinished event")
     }
 }
