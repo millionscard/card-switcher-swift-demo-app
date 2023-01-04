@@ -8,7 +8,7 @@
 import UIKit
 import KnotAPI
 
-class ViewController: UIViewController, CardOnFileDelegate {
+class ViewController: UIViewController {
     func onSuccess(merchant: String) {
         print(merchant)
     }
@@ -38,12 +38,12 @@ class ViewController: UIViewController, CardOnFileDelegate {
 
 
     @IBAction func openAccountUpdater() {
-        let session = CardOnFileSwitcherSession(sessionId: "9c361eed-f86c-4db7-8adb-92caca93f8d9", clientId: "ab86955e-22f4-49c3-97d7-369973f4cb9e", environment: .sandbox)
+        let session = CardOnFileSwitcherSession(sessionId: "faf88aa3-3508-4b78-96dd-776c24443dd9", clientId: "03d4b1a7-2799-4c2d-84be-92191008451c", environment: .sandbox)
         session.setPrimaryColor(primaryColor: "#000000")
         session.setTextColor(textColor: "#FFFFFF")
         session.setCompanyName(companyName: "Rho")
-        session.openOnCardFileSwitcher(merchants: [])
-        session.setDelegate(delegate: self)
+        session.openCardOnFileSwitcher()
+//        session.setDelegate(delegate: self)
     }
 }
 
