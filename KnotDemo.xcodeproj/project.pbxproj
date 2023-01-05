@@ -13,19 +13,16 @@
 		99626C5728A99F6D00E8B967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99626C5528A99F6D00E8B967 /* Main.storyboard */; };
 		99626C5928A99F7200E8B967 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99626C5828A99F7200E8B967 /* Assets.xcassets */; };
 		99626C5C28A99F7200E8B967 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99626C5A28A99F7200E8B967 /* LaunchScreen.storyboard */; };
-		998FAD0C2964CB1C009E1E1A /* KnotAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998FAD0B2964CB1C009E1E1A /* KnotAPI.xcframework */; };
-		998FAD0D2964CB1C009E1E1A /* KnotAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 998FAD0B2964CB1C009E1E1A /* KnotAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CF7C1664F910FB14D8462437 /* Pods_KnotDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7C09E2F9D3F91C72C3C00 /* Pods_KnotDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		998FAD0E2964CB1C009E1E1A /* Embed Frameworks */ = {
+		99F0B4062965C53E00ADF695 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				998FAD0D2964CB1C009E1E1A /* KnotAPI.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +39,6 @@
 		99626C5828A99F7200E8B967 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99626C5B28A99F7200E8B967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99626C5D28A99F7200E8B967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		998FAD0B2964CB1C009E1E1A /* KnotAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KnotAPI.xcframework; path = "../knotapi-ios-sdk/dist/KnotAPI.xcframework"; sourceTree = "<group>"; };
 		9A585A710A8F811E514C8A1F /* Pods-KnotDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnotDemo.debug.xcconfig"; path = "Target Support Files/Pods-KnotDemo/Pods-KnotDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DCF7C09E2F9D3F91C72C3C00 /* Pods_KnotDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnotDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,7 +48,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				998FAD0C2964CB1C009E1E1A /* KnotAPI.xcframework in Frameworks */,
 				CF7C1664F910FB14D8462437 /* Pods_KnotDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +58,6 @@
 		1E66E77E4DE4EF9E414B5C5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				998FAD0B2964CB1C009E1E1A /* KnotAPI.xcframework */,
 				DCF7C09E2F9D3F91C72C3C00 /* Pods_KnotDemo.framework */,
 			);
 			name = Frameworks;
@@ -121,7 +115,8 @@
 				99626C4828A99F6D00E8B967 /* Sources */,
 				99626C4928A99F6D00E8B967 /* Frameworks */,
 				99626C4A28A99F6D00E8B967 /* Resources */,
-				998FAD0E2964CB1C009E1E1A /* Embed Frameworks */,
+				99F0B4062965C53E00ADF695 /* Embed Frameworks */,
+				AE9363283F0CC3A21375AACB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +194,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE9363283F0CC3A21375AACB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnotDemo/Pods-KnotDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -356,7 +368,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = RCF226JZTL;
@@ -368,6 +380,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 5;
@@ -400,6 +413,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
