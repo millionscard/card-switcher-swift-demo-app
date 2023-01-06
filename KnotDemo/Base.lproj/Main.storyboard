@@ -17,25 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-34-ScL">
-                                <rect key="frame" x="88" y="350" width="260" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Open Card on file switcher"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Open Card on file switcher" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="openAccountUpdater" destination="BYZ-38-t0r" eventType="touchUpInside" id="fWp-oZ-zYp"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kRz-tW-pUw">
+                                <rect key="frame" x="83.333333333333329" y="308" width="247.66666666666669" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-34-ScL">
+                                        <rect key="frame" x="0.0" y="0.0" width="247.66666666666666" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="EKX-8J-Res"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Open Card on file switcher"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Open Card on file switcher" titleAlignment="center">
+                                            <fontDescription key="titleFontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xzj-Do-CLI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZI-cF-buM">
+                                        <rect key="frame" x="0.0" y="70" width="247.66666666666666" height="50"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Y4q-cR-0eI"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Open Subscription Canceller">
+                                            <fontDescription key="titleFontDescription" name="TamilSangamMN-Bold" family="Tamil Sangam MN" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5j-tx-gSM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TK1-70-BD5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="kRz-tW-pUw" firstAttribute="centerY" secondItem="Wmv-Iv-w0N" secondAttribute="centerY" id="hzy-HO-jq0"/>
+                            <constraint firstItem="kRz-tW-pUw" firstAttribute="centerX" secondItem="Wmv-Iv-w0N" secondAttribute="centerX" id="ucH-Qz-hwd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
