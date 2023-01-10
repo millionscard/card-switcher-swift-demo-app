@@ -64,7 +64,12 @@ extension ViewController {
     
     func apiCallCreateSession(token:String){
         let Url = String(format: "https://sample.knotapi.com/api/knot/session")
-        let parameters: [String: Any] = [String: Any]()
+        var parameters: [String: Any] = [String: Any]()
+        if(isOpenFrom == .switcher){
+            parameters = [ "type": "card_switcher" ]
+        }else{
+            parameters = [ "type": "subscription_canceller" ]
+        }
         self.apicall(Url: Url, parameters: parameters, token: token)
     }
     
