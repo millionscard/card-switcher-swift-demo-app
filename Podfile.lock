@@ -1,16 +1,16 @@
 PODS:
-  - KnotAPI (0.1.49)
+  - KnotAPI (0.5.7)
 
 DEPENDENCIES:
-  - KnotAPI
+  - KnotAPI (= 0.5.7)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - KnotAPI
 
 SPEC CHECKSUMS:
-  KnotAPI: 5a5894e28c1e1707a1ffbd097d73a213d90f30b6
+  KnotAPI: 0b0e7d671169af8439cb01123aaa2e9e223eda7b
 
-PODFILE CHECKSUM: 0f81463367edddd2ed47a058f879138a0d3e62fa
+PODFILE CHECKSUM: dc046d4b9b6e6bb53e8dd75e3d84fb8cf6f73431
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.2
